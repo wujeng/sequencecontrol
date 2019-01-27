@@ -1,25 +1,27 @@
-# Pneumatics CAD
+# Sequence Control Computer-Aided Design
 
-![PneumaticLab](PneumaticLab.jpg "Pneumatic Lab")
+![SCCAD](sccad.png "Sequence Control Computer-Aided Design")
 
-PneumaticsCAD is a computer-aided pneumatic circuit design software.
+SCCAD is a computer-aided sequence control design software.
 The software is developed in Java and is an Eclipse project.
 
 To start the program, use command:
 
-java tw.com.justiot.pneumatics.PneumaticsCAD
+java tw.com.justiot.sequencecontrol.SCCAD
 
-This software allows user to conduct pneumatic circuit design by
+This software allows user to design electric circuit (PLC program) for sequence control by
 
-(1) picking the circuit components on menu bar to draw the pneumatic devices,
+(1) setting up controlled system from a system pool,
 
-(2) moving the devices to proper positions and connecting the devices with signal lines (pipes),
+(2) choosing electric devices,
 
-(3) filling in the parameters for all the devices.
+(3) editting electric circuit for sequence control,
 
-(4) the simulation of the designed circuit is Automatically applied.
+(4) simulating the control result of the circuit,
+
+(5) translating the circuit design to programmable logic control programs of different models.
 
 
 Reference:
-1. [A web-based computer-aided pneumatic circuit design software, Simulation Modelling Practice and Theory 11(3-4):285-295, July 2003.](https://www.researchgate.net/publication/220674318_A_web-based_computer-aided_pneumatic_circuit_design_software)
-2. [Web-based learning and instruction support system for pneumatics, Computers & Education 41(2):107-120, September 2003.](https://www.researchgate.net/publication/223780464_Web-based_learning_and_instruction_support_system_for_pneumatics)
+1. [A Web-based, collaborative, computer-aided sequential control design tool, May 2003 IEEE control systems 23(2):14 - 19.](https://www.researchgate.net/publication/3207436_A_Web-based_collaborative_computer-aided_sequential_control_design_tool)
+2. [Automatic Design of Electrical Circuits for Pneumatic Sequential Control, International Conference on Automation Technology (AUTOMATION 2003) At: National Chung Cheng University, Chia-Yi, Taiwan.](https://www.researchgate.net/publication/285582323_Automatic_Design_of_Electrical_Circuits_for_Pneumatic_Sequential_Control)
