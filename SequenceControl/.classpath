@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SequenceControl/lib/comm.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SequenceControl/lib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SequenceControl/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SequenceControl/lib/config-1.3.3.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SequenceControl/lib/cos.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SequenceControl/lib/httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SequenceControl/lib/icpdas.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SequenceControl/lib/jamod.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SequenceControl/lib/jcommander-1.72.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/workspace/SequenceControl/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

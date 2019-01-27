@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html">
+<title>Computer-aided Sequential Control Design</title>
+</head>
+<BODY BGCOLOR=FFFFFF>
+
+<h3>Computer-aided Sequential Control Design</h3>
+
+<p>A introduction on sequential control is shown <a href="sequential.htm">here</a>.</p>
+
+<p><img border=0 width=643 height=450 src="..\Images\ecad.JPG"></p>
+
+<p>WebLadderCAD is a web-based computer-aided sequential control design software based on the <a href="vlab.htm">Virtual Pneumatic 
+Laboratory </a> program. Pneumatic actuator (piston or motor) and some electrically controlled devices (alarm, conveyer,...) are used 
+as controlled systems which are shown in pneumatic circuit panel. 
+WebLadderCAD provides electrical devices, electrical valves, connection wires so that user 
+can design electrical circuit for the sequential control of the system in the pneumatic circuit panel (see the figure above).
+
+<p> Use the &quot;Electrics/Ladder&quot;  Menu function to open electrical circuit design windows. </P> 
+
+The WebLadderCAD software has the following features:
+<ul><li>Visualized controlled components.<BR>
+Besides the pneumatic system, some electrically controlled components can be chosen to setup a controlled system.
+       <li>Visualized electrical devices.<br>
+This software provides some electrical devices, which can be used to form an electric circuit.
+       <li><a href="ecad.htm">Computer-aided design</a>.<br>
+This software helps user design electric circuits with clicks and drops of a mouse.
+       <li><a href="auto.htm">Computer automatic design</a>.<br>
+This software helps user input motion sequence required with clicks of a mouse. Then, the software can design electric circuit automatically according to the requirement.
+      <li><a href="simulation.htm">Circuit analysis</a>.<br>
+This software can analyzes the circuit and point out wrong connections if any exists.
+       <li><a href="simulation.htm">Animated simulation</a>.<br>
+This software simulates the motion of the controlled systems according to the circuit design.
+       <li><a href="plc.htm">PLC codes</a>.<br>
+This software can translate the electric circuit into codes of different models of PLCs.
+       <li><a href="udefine.htm">User-defined components</a>.<br>
+By providing some proper data, user can edit certain preformatted file to add components to the program.
+       <li>Web reachable.<br>
+With a Java-enabled browser, user can access the software in any place at any time. There is no installation problem.
+       <li><a href="database.htm">Data storage</a>.<br>
+In this software, users can save their design results in a database on a remote site.
+       <li><a href="multiuser.htm">Collaborative mode</a>.<br>
+The software can be used in collaborative mode. Many users can design a common pneumatic circuit collaboratively.
+
+<p>
+ 
+<center><img src="..\images\structure.jpg"><br></center>
+
+<p>
+The execution environment of the software is shown in the figure above. 
+First of all, the software is a Java applet and is also a Java application. 
+It can be used in any computer with Java virtual machine, or it can be embedded into web page for web access by a browser. 
+It consists of various kinds of software components and provides basic functions of a computer-aided software.
+</p>
+<p>
+When the software is used as an application, user can save his data in local computer. 
+Otherwise, user can save his design result in a remote database. 
+The function of data storage in a database is accomplished with the assistance of Java servlets. 
+Java servlets in a  web server are used to coordinate data access of a database through JDBC connections 
+and applet-servlet communications are used to transfer data between applets and servlets.
+</P>
+<p>
+In order to provide collaborative function, a collaborative server is used in the web server computer. 
+The collaborative server manages messages among many computer-aided design programs running in collaborative mode. 
+These messages include user operation messages, chat messages, and token management messages. 
+The collaborative server is also written in Java.
+
+</body>
+
+</html>

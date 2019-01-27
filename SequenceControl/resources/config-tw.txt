@@ -1,0 +1,156 @@
+[Actuator] % modelType
+% modelName  tooltip    size_of_icon_image   icon_image           size_of_pneumatic_symbol pneumatic_symbol  no._of_images port1_position port2_position  range_of_limit_switches
+Piston       Âù°Ê¬û  36 40        images/SymSys/PistonIcon.GIF       95 28           images/SymSys/Piston.GIF   12           5 25          44 25             53 16 88 27
+OneWayPiston ³æ°Ê¬û  36 40 images/SymSys/OneWayPistonIcon.GIF 95 28 images/SymSys/OneWayPiston.GIF 12 5 25 0  0  53 16 88 27
+
+[Valve] % modelType
+% modelName  tooltip    size_of_icon_image   icon_image           size_of_pneumatic_symbol pneumatic_symbol     no._of_images no._of_squares no._of_forces force_type  exclusive p_port r_port s_port a_port b_port  connections_of_squares  force_position one_way_action
+Button    «ö¶s  50 18 images/SymValve/PushButtonIcon.GIF    50 18      images/SymValve/PushButton.GIF   2              2                            1          MAN           0        28 15  35 15  0 0     28 2     0  0                p0ar par0                 4 10                 no
+PB42     «ö¶s4/2¦ì»Ö   50 18 images/SymValve/PB42Icon.GIF             50 18      images/SymValve/PB42.GIF            2              2                            1          MAN           0        28 15  35 15  0 0     28 2   35  2                pbar pabr                 4 10                 no
+PB52     «ö¶s5/2¦ì»Ö   50 18 images/SymValve/PB52Icon.GIF             50 18      images/SymValve/PB52.GIF            2              2                            1          MAN           0        32 15  27 15  36 15     28 2   35  2            pbars0 pabsr0           4 10                 no
+Foot ¸}½ñ¶}Ãö  50 18 images/SymValve/FootIcon.GIF             50 18      images/SymValve/Foot.GIF   2              2                            1          MAN           0        28 15  35 15  0 0     28 2     0  0                p0ar par0                 4 10                 no
+LimitSwitch  ·¥­­¶}Ãö 50 18 images/SymValve/LimitSwitchIcon.GIF 50 18 images/SymValve/LimitSwitch.GIF 2 2 1 MECHANIC 0 28 15 35 15 0 0 28 2 0  0 p0ar par0 4 10 no
+LSoneWay  ³æ¦V·¥­­¶}Ãö  52 18 images/SymValve/LSoneWayIcon.GIF 52 18 images/SymValve/LSoneWay.GIF 2 2 1 MECHANIC 0 31 15 38 15 0 0 31 2 0  0 p0ar par0 4 10 yes
+PVD42     Âù®ð°Ê4/2¦ì»Ö   49 18 images/SymValve/PVD42Icon.GIF 49 18 images/SymValve/PVD42.GIF       4 2 2 FLUID    0 28 15 35 15 0 0 28 2 35 2 pbar pabr 46 9 2 9 no
+PVD42i    Âù®ð°Ê4/2¦ì»Ö   49 18 images/SymValve/PVD42iIcon.GIF 49 18 images/SymValve/PVD42i.GIF     4 2 2 FLUID    0 28 15 35 15 0 0 28 2 35 2 pabr pbar 46 9 2 9 no
+PVD43     Âù®ð°Ê4/3¦ì»Ö   64 18 images/SymValve/PVD43Icon.GIF 64 18 images/SymValve/PVD43.GIF       3 3 2 FLUID    0 28 15 35 15 0 0 28 2 35 2 p0r0a0b0 pbar pabr 61 12 2 12 no
+PVD32     Âù®ð°Ê3/2¦ì»Ö   50 18 images/SymValve/PVD32Icon.GIF 50 18 images/SymValve/PVD32.GIF       4 2 2 FLUID    0 28 15 35 15 0 0 28 2 0  0 p0ar par0 47 9 2 9 no
+PVS32     ³æ°Ê±`³¬3/2¦ì»Ö   50 18 images/SymValve/PVS32Icon.GIF 50 18 images/SymValve/PVS32.GIF       2 2 1 FLUID    0 28 15 35 15 0 0 28 2 0  0 p0ar par0 2 9 no
+PVS32O    ³æ°Ê±`¶}3/2¦ì»Ö   50 18 images/SymValve/PVS32OIcon.GIF 50 18 images/SymValve/PVS32O.GIF       2 2 1 FLUID    0 28 15 35 15 0 0 28 2 0  0 par0 p0ar 2 9 no
+PVS42     ³æ°Ê4/2¦ì»Ö   50 18 images/SymValve/PVS42Icon.GIF 50 18 images/SymValve/PVS42.GIF       2 2 1 FLUID    0 28 15 35 15 0 0 28 2 35 2 pbar pabr 2 9 no
+%EVD42    Electric_Double_Head_4/2_Valve    82 18 images/SymValve/VD42Icon.GIF 82 18 images/SymValve/VD42.GIF        4 2 2 ELECTRIC 0 37 15 44 15 0 0 37 2 44 2 pbar pabr 52 13 15 13 no
+%EVD43    Electric_Double_Head_4/3_Valve    82 18 images/SymValve/VD43Icon.GIF 82 18 images/SymValve/VD43.GIF        3 3 2 ELECTRIC 0 37 15 44 15 0 0 37 2 44 2 p0r0a0b0 pbar pabr 67 13 14 13 no
+%EVS42    Electric_Double_Head_4/2_Valve    82 18 images/SymValve/VS42Icon.GIF 82 18 images/SymValve/VS42.GIF        2 2 1 ELECTRIC 0 37 15 44 15 0 0 37 2 44 2 pbar pabr 14 13 no
+
+[Connector] % modelType
+% modelName  tooltip   size_of_icon_image   icon_image           size_of_pneumatic_symbol pneumatic_symbol    no._of_ports port_position port_direction
+Source       ®ðÀ£·½    26 21 images/SymCon/Source1.GIF               26 21      images/SymCon/Source.GIF     1          13 2             up
+Sink         ±Æ®ðºÞ      26 21 images/SymCon/SinkIcon.GIF       7 21 images/SymCon/Sink.GIF   1 3 2 up
+3Way         ¤T³q±µÀY 26 21 images/SymCon/3Way1.GIF       26 21 images/SymCon/3Way.GIF   3 13 2 up 2 14 left 23 14 right
+Stop         ¤î¦^»Ö 26 21 images/SymCon/Stop1.GIF       26 21 images/SymCon/Stop.GIF   1 13 2 up
+1Way         ³æ¦V¤î¦^»Ö 26 21 images/SymCon/1Way1.GIF       26 21 images/SymCon/1Way.GIF   2  2 11 left 23 11 right
+
+[Logic]
+OR     ±ô°Ê»Ö(©Î)  26 21 images/SymLogic/or1.GIF    26 21 images/SymLogic/or.GIF  13 2 1 11 24 11
+AND    ÂùÀ£»Ö(¥B) 26 21 images/SymLogic/and1.GIF   26 21 images/SymLogic/and.GIF 13 2 1 11 24 11
+
+[Delay]
+ACDelay °Ê§@«¬±`³¬©µ®É»Ö 52 29 images/SymDelay/ACDelayIcon.GIF 71 40 images/SymDelay/ACDelay.GIF 50 2 up 21 37 down 50 37 down 29 33 1 0
+AODelay °Ê§@«¬±`¶}©µ®É»Ö 52 29 images/SymDelay/AODelayIcon.GIF 71 40 images/SymDelay/AODelay.GIF 50 2 up 21 37 down 50 37 down 29 33 1 1
+RCDelay ´_Âk«¬±`³¬©µ®É»Ö 52 29 images/SymDelay/RCDelayIcon.GIF 71 40 images/SymDelay/RCDelay.GIF 50 2 up 21 37 down 50 37 down 29 33 0 0
+RODelay ´_Âk«¬±`¶}©µ®É»Ö 52 29 images/SymDelay/RODelayIcon.GIF 71 40 images/SymDelay/RODelay.GIF 50 2 up 21 37 down 50 37 down 29 33 0 1
+
+[FlowValve]
+2Flow   ¤£¥i½ÕÂù¦V¸`¬y»Ö 34 28 images/SymFLow/2Flow1.GIF    34 28 images/SymFlow/2Flow.GIF  2 14 left 30 14 right 0 0
+2FlowA  ¥i½ÕÂù¦V¸`¬y»Ö 34 28 images/SymFLow/2FlowA1.GIF   34 28 images/SymFlow/2FlowA.GIF 2 14 left 30 14 right 0 1
+1Flow   ¤£¥i½Õ³æ¦V¸`¬y»Ö 34 28 images/SymFLow/1Flow1.GIF    34 28 images/SymFlow/1Flow.GIF  2 21 left 30 21 right 1 0
+1FlowA  ¥i½Õ³æ¦V¸`¬y»Ö 34 28 images/SymFLow/1FlowA1.GIF   34 28 images/SymFlow/1FlowA.GIF 2 21 left 30 21 right 1 1
+Exhaust  §Ö³t±Æ®ð»Ö                          34 28 images/SymFLow/Exhaust1.GIF   34 28 images/SymFlow/Exhaust.GIF  0 16 left 15 0 up 1 0
+
+[PressureValve]
+Relief   ÄÀÀ£»Ö 31 31 images/SymPre/IRelief.GIF   45 45 images/SymPre/Relief.GIF   1 21 2 up
+Reduce   ´îÀ£»Ö 31 31 images/SymPre/IReduce.GIF   45 45 images/SymPre/Reduce.GIF   2 21 2 up 21 42 down
+Sequence1 ¶¶§Ç»Ö1 31 31 images/SymPre/ISequence1.GIF 45 45 images/SymPre/1Sequence.GIF 3 21 2 up 21 42 down 2  19 left
+Sequence2 ¶¶§Ç»Ö2 31 31 images/SymPre/ISequence.GIF 45 45 images/SymPre/Sequence.GIF 2 21 2 up 21 42 down
+unload  ¨ø¸ü»Ö 31 31 images/SymPre/Iunload.GIF   45 45 images/SymPre/unload.GIF   2 21 2 up 2  19 left
+
+[Gauge]
+FlowGauge ¬y¶q¿ö 27 23 images/SymGauge/FlowGauge1.GIF 27 23 images/SymGauge/FlowGauge.GIF 2 2 11 left 24 11 right 7 14
+PressureGauge À£¤O¿ö 27 23 images/SymGauge/PressureGauge1.GIF 27 23 images/SymGauge/PressureGauge.GIF 2 2 20 left 24 20 right 7 12
+
+
+[Cascade Method]
+Stage °O¾Ð³æ¤¸ circuits/cascade/stage.pc  44 28 images/CirCascade/stage.GIF
+2Stage 2¦ê¯Å circuits/cascade/2stage.pc 44 28 images/CirCascade/2stage.GIF
+3Stage 3¦ê¯Å circuits/cascade/3stage.pc 44 28 images/CirCascade/3stage.GIF
+4Stage 4¦ê¯Å circuits/cascade/4stage.pc 44 28 images/CirCascade/4stage.GIF
+
+[Demos]
+A+A-   A+A- circuits/demos/A+A-.pc      44 28 images/CirDemos/A+A-.GIF
+A+dA-  A+dA- circuits/demos/A+dA-.pc     44 28 images/CirDemos/A+dA-.GIF
+
+[EDemos]
+eA+A-   A+A- circuits/demos/eA+A-.pc      44 28 images/CirDemos/eA+A-.GIF
+eA+dA-  A+dA- circuits/demos/eA+dA-.pc     44 28 images/CirDemos/eA+dA-.GIF
+
+[EDevice]   27       30     25      32
+% modelName  tooltip       abbr    type  icon_image       NO_image         NOHC_image       NC_image        NCHO_image                Sol1_image             Sol2_image
+PushButton  «ö¶s¶}Ãö    PB      manual_auto  images/SymED/PBc.GIF   images/SymED/PBNO.GIF  images/SymED/PBNOHC.GIF images/SymED/PBNC.GIF images/SymED/PBNCHO.GIF     NULL         NULL           NULL          NULL
+ELimitSwitch ·¥­­¶}Ãö    LS  mechanic     images/SymED/LSc.GIF      images/SymED/LSNO.GIF  images/SymED/LSNOHC.GIF images/SymED/LSNC.GIF images/SymED/LSNCHO.GIF     NULL         NULL           NULL          NULL
+Relay          Ä~¹q¾¹              R    electric      images/SymED/Relayc.GIF   images/SymED/RNO.GIF   images/SymED/RNOHC.GIF  images/SymED/RNC.GIF  images/SymED/RNCHO.GIF  images/SymED/RSOL1.GIF images/SymED/RSOL1ON.GIF     NULL          NULL
+Timer          ­p®É¾¹              T    timer      images/SymED/Timerc.GIF   images/SymED/TNO.GIF   images/SymED/TNOHC.GIF  images/SymED/TNC.GIF  images/SymED/TNCHO.GIF  images/SymED/TSOL1.GIF images/SymED/TSOL1ON.GIF     NULL          NULL
+Counter       ­p¼Æ¾¹          C      counter    images/SymED/Counterc.GIF images/SymED/CNO.GIF   images/SymED/CNOHC.GIF  images/SymED/CNC.GIF  images/SymED/CNCHO.GIF  images/SymED/CSOL1.GIF images/SymED/CSOL1ON.GIF images/SymED/CSOL2.GIF images/SymED/CSOL2ON.GIF
+ToggleButton ¤Á´«¶}Ãö  CH   manual_toggle images/SymED/Choicec.GIF  images/SymED/CHNO.GIF  images/SymED/CHNC.GIF   images/SymED/CHNC.GIF images/SymED/CHNO.GIF       NULL         NULL           NULL          NULL
+Sensor       ·P´ú¾¹        S    sensor        images/SymED/Sensorc.GIF  images/SymED/SNO.GIF  images/SymED/SNOHC.GIF   images/SymED/SNC.GIF images/SymED/SNCHO.GIF       NULL         NULL           NULL          NULL
+
+[EValve]
+% modelName              tooltip              size_of_icon_image   icon_image   size_of_pneumatic_symbol pneumatic_symbol     no._of_images no._of_squares no._of_forces force_type  exclusive p_port r_port s_port a_port b_port  connections_of_squares  force_position one_way_action                                        Sol1_image                                                         Sol2_image                                               Sol1_position          Sol2_position
+EVD42    ÂùÀY4/2¹qºÏ»Ö    82 18 images/SymValve/VD42Icon.GIF 82 18 images/SymValve/VD42.GIF               4                    2                       2          ELECTRIC        0        37 15  44 15  0 0     37 2    44 2               pbar pabr                52 13 15 13                no              images/symsys/EDSol.gif images/symsys/EDSolon.gif images/symsys/EDSol.gif images/symsys/EDSolon.gif 11 11 18 15 48 11 55 15  19 3 32 14 34 3 47 14
+EVD43    ÂùÀY4/3¹qºÏ»Ö    82 18 images/SymValve/VD43Icon.GIF 82 18 images/SymValve/VD43.GIF        3 3 2 ELECTRIC 0 37 15 44 15 0 0 37 2 44 2 p0r0a0b0 pbar pabr 67 13 14 13 no images/symsys/EDSol.gif images/symsys/EDSolon.gif images/symsys/EDSol.gif images/symsys/EDSolon.gif 11 11 18 15 63 11 70 15  19 3 32 14 49 3 62 14
+EVS42    ³æÀY4/2¹qºÏ»Ö    82 18 images/SymValve/VS42Icon.GIF 82 18 images/SymValve/VS42.GIF        2 2 1 ELECTRIC 0 37 15 44 15 0 0 37 2 44 2 pbar pabr 14 13 no images/symsys/EDSol.gif images/symsys/EDSolon.gif null null 11 11 18 15 0 0 0 0  19 3 32 14 34 3 47 14
+%EVS42    Electric_Double_Head_4/2_Valve    82 18 images/SymValve/VS42Icon.GIF 82 18 images/SymValve/VS42.GIF        2 2 1 ELECTRIC 0 37 15 44 15 0 0 37 2 44 2 pbar pabr 14 13 no
+
+[ESystem]
+% modelName  tooltip   size_of_icon_image   icon_image     size_of_system_image  system_image     no._of_images                     electric_symbol1                  electric_symbol2   actionRect1  actionRect2   inputRect1  inputRect2  LS1pos  LS2pos  sound
+Conveyer     ¿é°e±a   83 35  images/symsys/conveyorc.gif   186 95      images/symsys/conveyor.gif     6     images/symsys/EDMotor.gif images/symsys/EDMotoron.gif     null  null       16 3 30 15     0 0 0 0     16 3 30 15     0 0 0 0   168 18  0 0    null
+Indicator    «ü¥Ü¿O  27 35  images/symsys/Lightc.gif      86 86       images/symsys/Light.gif        2      images/symsys/EDLight.gif  images/symsys/EDLighton.gif   null  null       40 2 60 20     0 0 0 0     40 2 60 20     0 0 0 0   0 0     0 0    null
+Alarm        Äµ³ø¾¹      27 30  images/symsys/Alarmc.gif      94 88       images/symsys/Alarm.gif        4      images/symsys/EDAlarm.gif  images/symsys/EDAlarmon.gif   null null        42 2 62 22     0 0 0 0     42 2 62 22     0 0 0 0   0 0     0 0    sound/alarm.wav
+Fan          ­·®°        29 35  images/symsys/fanc.gif        76 90       images/symsys/fan.gif          6      images/symsys/EDfan.gif     images/symsys/EDfanon.gif    null null        40 5 55 22     0 0 0 0     40 5 55 22     0 0 0 0   0 0     0 0    null
+Light        Äµ¥Ü¿O      29 35  images/symsys/flashc.gif      73 88       images/symsys/flash.gif        4      images/symsys/EDflash.gif   images/symsys/EDflashon.gif  null null        38 3 59 24     0 0 0 0     38 3 59 24     0 0 0 0   0 0     0 0    null
+Pump         ¤ô¬¦       52 34  images/symsys/pumpc.gif       138 86      images/symsys/pump.gif         15      images/symsys/EDPump.gif   images/symsys/EDPumpon.gif   null null        38 3 59 24     0 0 0 0     38 3 59 24     0 0 0 0   0 0     0 0    null
+
+[PLC]
+% ï¿½ï¿½ï¿½ï¿½    ï¿½ï¿½ï¿½O                                                                         ï¿½{ï¿½ï¿½ï¿½Ì¦hï¿½ï¿½ï¿½ï¿½
+% modelName  tooltip             size_of_icon_image   icon_image
+OMRON_C20 OMRON_C20 50 18 images/SymPLC/PushButtonIcon.GIF
+%            command symbols                                   command lines limit
+ LD LD_NOT LD LD_NOT AND AND_NOT OR OR_NOT OR_LD AND_LD OUT TIM CNT RST END 10000
+% ï¿½ï¿½ï¿½Jï¿½ï¿½ï¿½mï¿½ï¿½ï¿½G
+%ï¿½eï¿½mï¿½rï¿½ï¿½  ï¿½Æ¨t    ï¿½dï¿½ï¿½
+    NULL    10     0-15 100-115 200-215 300-315 400-415
+% ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½mï¿½ï¿½ï¿½G
+%ï¿½eï¿½mï¿½rï¿½ï¿½  ï¿½Æ¨t    ï¿½dï¿½ï¿½
+    NULL    10     500-515 600-615 700-715 800-815 900-915
+% ï¿½~ï¿½qï¿½ï¿½ï¿½ï¿½ï¿½mï¿½ï¿½ï¿½G
+%ï¿½eï¿½mï¿½rï¿½ï¿½  ï¿½Æ¨t    ï¿½dï¿½ï¿½
+    NULL    10     1000-1015 1100-1115 1200-1215 1300-1315 1400-1415 1500-1515 1600-1615 1700-1715
+% ï¿½pï¿½É¾ï¿½ï¿½ï¿½ï¿½mï¿½ï¿½ï¿½G
+%ï¿½eï¿½mï¿½rï¿½ï¿½  ï¿½]ï¿½wï¿½È®æ¦¡    ï¿½Æ¨t    ï¿½dï¿½ï¿½
+    TIM      #xxxx       10      0-47
+% ï¿½pï¿½Æ¾ï¿½ï¿½ï¿½ï¿½mï¿½ï¿½ï¿½G
+%ï¿½eï¿½mï¿½rï¿½ï¿½  ï¿½]ï¿½wï¿½È®æ¦¡   ï¿½Æ¨t    ï¿½dï¿½ï¿½
+    CNT      #xxxx                    10      0-47
+%
+ï¿½hï¿½L_A1 ï¿½hï¿½L_A1 50 18 images/SymPLC/PushButtonIcon.GIF
+LD LDI LD LDI AND ANI OR ORI ORB ANB OUT OUT OUT RST END 10000
+     X    8      400-413 500-513 0-13
+     Y    8      430-437 530-537 30-37
+     R    8      100-177 200-277
+     T    #xxxx     8      50-57 450-457 550-557
+     C    #xxxx     8      60-67 460-467 560-567 662-667
+%
+ï¿½ï¿½ï¿½ï¿½_EM ï¿½ï¿½ï¿½ï¿½_EM 50 18 images/SymPLC/PushButtonIcon.GIF
+ORG ORG_NOT STR STR_NOT AND AND_NOT OR OR_NOT OR_STR AND_STR OUT OUT OUT RST END 10000
+   NULL   10      0-15 20-35 40-55 60-75 80-95 100-115
+   NULL   10      200-215 220-235 240-255 260-275
+   NULL   10      400-655
+     T   .xxxx     10      0-95
+     C   .xxxx     10      0-95
+%
+ï¿½Ã§ï¿½_FB ï¿½Ã§ï¿½_FB 50 18 images/SymPLC/PushButtonIcon.GIF
+ORG ORG_NOT LD LD_NOT AND AND_NOT OR OR_NOT OR_LD AND_LD OUT T C RST END 10000
+     X   10      0-159
+     Y   10      0-159
+     M   10      0-799
+     T   PV:xxxx   10      50-199
+     C   PV:xxxx   10      0-255
+%
+MITSUBISHI_FX2 MITSUBISHI_FX2 50 18 images/SymPLC/PushButtonIcon.GIF
+LD LDI LD LDI AND ANI OR ORI ORB ANB OUT OUT OUT RST END 10000
+     X   8      0-7 10-17 20-27 30-37 40-47
+     Y   8      0-7 10-17 20-27 30-37
+     M   10      0-499
+     T   #xxxx     10      0-199
+     C   #xxxx     10      0-99
+%
+[]

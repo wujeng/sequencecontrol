@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>可程式控制器程式</title>
+</head>
+<BODY BGCOLOR=FFFFFF>
+
+  <h3>可程式控制器程式</h3>
+  <p>使用者可用下拉式功能表, '可程式控制器'/'可程式控制器程式',將設計好的電氣迴路轉為多種廠牌的可程式控制器程式.<br>
+  <img src="images\plc.gif">
+
+<p>本軟體將電氣迴路轉為可程式控制器程式. 雖然可程式控制器有各種廠牌型式,不同型式之間, 程式格式不同,
+  但是, 都具備基本功能指令, 只是指令的名稱及定址方式,定址空間不同.
+   軟體中, config.txt檔定義了幾個廠牌的格式, 在軟體中,使用者可以切換廠牌,以得到對應的程式.
+
+<p>使用者可依檔案內資料格式,新增不同廠牌可程式控制器.
+</P>
+<p>
+Table 1. part of the configuration file. (see <a href="udefine.htm">User Defined Devices</a>)
+<pre>
+-------------------------------------------------------------------------------------------
+[PLC]
+% 類型    指令                                                                         程式最多行數
+% modelName  tooltip             size_of_icon_image   icon_image
+OMRON_C20 OMRON_C20 50 18 images/SymPLC/PushButtonIcon.GIF
+%            command symbols                                   command lines limit
+ LD LD_NOT LD LD_NOT AND AND_NOT OR OR_NOT OR_LD AND_LD OUT TIM CNT RST END 10000
+% 輸入位置分佈
+%前置字元  數系    範圍
+    NULL    10     0-15 100-115 200-215 300-315 400-415
+% 輸出位置分佈
+%前置字元  數系    範圍
+    NULL    10     500-515 600-615 700-715 800-815 900-915
+% 繼電器位置分佈
+%前置字元  數系    範圍
+    NULL    10     1000-1015 1100-1115 1200-1215 1300-1315 1400-1415 1500-1515 1600-1615 1700-1715
+% 計時器位置分佈
+%前置字元  設定值格式    數系    範圍
+    TIM      #xxxx       10      0-47
+% 計數器位置分佈
+%前置字元  設定值格式   數系    範圍
+    CNT      #xxxx                    10      0-47
+%
+士林_A1 士林_A1 50 18 images/SymPLC/PushButtonIcon.GIF
+LD LDI LD LDI AND ANI OR ORI ORB ANB OUT OUT OUT RST END 10000
+     X    8      400-413 500-513 0-13
+     Y    8      430-437 530-537 30-37
+     R    8      100-177 200-277
+     T    #xxxx     8      50-57 450-457 550-557
+     C    #xxxx     8      60-67 460-467 560-567 662-667
+%
+日立_EM 日立_EM 50 18 images/SymPLC/PushButtonIcon.GIF
+ORG ORG_NOT STR STR_NOT AND AND_NOT OR OR_NOT OR_STR AND_STR OUT OUT OUT RST END 10000
+   NULL   10      0-15 20-35 40-55 60-75 80-95 100-115
+   NULL   10      200-215 220-235 240-255 260-275
+   NULL   10      400-655
+     T   .xxxx     10      0-95
+     C   .xxxx     10      0-95
+%
+永宏_FB 永宏_FB 50 18 images/SymPLC/PushButtonIcon.GIF
+ORG ORG_NOT LD LD_NOT AND AND_NOT OR OR_NOT OR_LD AND_LD OUT T C RST END 10000
+     X   10      0-159
+     Y   10      0-159
+     M   10      0-799
+     T   PV:xxxx   10      50-199
+     C   PV:xxxx   10      0-255
+%
+MITSUBISHI_FX2 MITSUBISHI_FX2 50 18 images/SymPLC/PushButtonIcon.GIF
+LD LDI LD LDI AND ANI OR ORI ORB ANB OUT OUT OUT RST END 10000
+     X   8      0-7 10-17 20-27 30-37 40-47
+     Y   8      0-7 10-17 20-27 30-37
+     M   10      0-499
+     T   #xxxx     10      0-199
+     C   #xxxx     10      0-99
+%
+[]
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+</pre>
+
+</body>
+
+</html>

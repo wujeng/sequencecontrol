@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<title>Central Data Storage</title>
+</head>
+
+<BODY BGCOLOR=FFFFFF>
+<!--<p><img  src="../images/database.jpg"></p>
+
+-->
+<h3>Central Data Storage</h3>
+<p>The Central Data Storage function of the Virtual Pneumatic Laboratory program is achieved by a Java servlet program
+ and a database server. (Only version above Server version has this function, see <a href="register.htm">regiser</a>.)
+The servlet program running in a servlet container (Apache Tomcat) is connected to the database server (mySQL database server)
+The Virtual Pneumatic Laboratory program, as a Java application or as a Java applet, is connected to the servlet to operate on the data
+in the database server.</p>
+<center><img src="..\images\structure.jpg"><br></center>
+<p>The functions of the "Database" menu are shown below:</p>
+
+<p>Login : Login servlet program to access database server.</p>
+
+<p>New : Start a new design and save the old one.</p>
+
+<p >Open : Load a old circuit design from database server.</p>
+
+<p >Save : Save the current circuit design to the database.</p>
+
+<p >Delete : Delete a circuit design in the database.</p>
+
+<p >Save as : Save the current circuit design to the database with a different name.</p>
+
+<p >Import : Load a circuit design from the database and add it to the current design.</p>
+
+<p >Export : Save the selected circuit to the database.</p>
+
+<p >First, user login to the servlet program. Then, he can perform other functions, like open,
+save, delete, save as,import,export, with his own identity. He can only access his own data.
+<p>Administrator can access all user's data and manage a common data area for all users' access.</p>
+
+
+</body>
+
+</html>

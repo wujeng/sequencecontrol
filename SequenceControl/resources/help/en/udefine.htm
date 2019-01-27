@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<title> User Defined Device</title>
+</head>
+<BODY BGCOLOR=FFFFFF>
+
+<h3>User Defined Device</h3>
+<p>There are so many pneumatic devices. It would be tedious to design a device class for every pneumatic device.
+Therefore, in this program all pneumatic devices are separated into different groups according to their functions.
+A general purpose device class is designed for every group. 
+With appropriate information new device can be added into the program easily. 
+The configuration file (resources/config.txt) of this program lists all these information to add new devices.
+User can modify the configuration file to add user defined devices.
+</p>
+
+<p>Part of the configuration file is listed here. (Anything after % is comment.)<br>
+--------------------------------------------------------------------------------------------------------------------------
+<pre>
+[Actuator] % Device Group
+% Name  icon size   icon graphics          　　　　symbol size      symbol graphics
+Piston       36 40  images/SymSys/PistonIcon.GIF       95 28        images/SymSys/Piston.GIF  
+% number of motion pictures  A port position　　B port position 　　　　position range of limit switch
+  12            　                              5 25                         44 25                                 53 16 88 27
+OneWayPiston 36 40 images/SymSys/OneWayPistonIcon.GIF 95 28 images/SymSys/OneWayPiston.GIF 12 5 25 0  0  53 16 88 27
+…
+ [Valve] % modelType 
+% modelName  size_of_icon_image   icon_image           size_of_pneumatic_symbol pneumatic_symbol  
+Button       50 18   images/SymValve/PushButtonIcon.GIF  50 18    images/SymValve/PushButton.GIF 
+% no._of_images no._of_squares no._of_forces force_type  exclusive p_port r_port s_port a_port 
+   2            2              1              MAN         0         28 15  35 15  0 0     28 2    
+% b_port  connections_of_squares  force_position
+0  0    p0ar par0                4 10
+LimitSwitch 50 18 images/SymValve/LimitSwitchIcon.GIF 50 18 images/SymValve/LimitSwitch.GIF 2 2 1 MECHANIC 0 28 15 35 15 0 0 28 2 0  0 p0ar par0 4 10
+PVD42       49 18 images/SymValve/PVD42Icon.GIF 49 18 images/SymValve/PVD42.GIF       4 2 2 FLUID    0 28 15 35 15 0 0 28 2 35 2 pbar pabr 46 9 2 9
+…
+[Connector] % modelType 
+% modelName  size_of_icon_image   icon_image           size_of_pneumatic_symbol pneumatic_symbol  
+Source       26 21     images/SymCon/Source1.GIF       26 21            images/SymCon/Source.GIF
+% no._of_ports port_position port_direction
+  1            13 2          up
+Sink   26 21 images/SymCon/SinkIcon.GIF       7 21 images/SymCon/Sink.GIF   1 3 2 up
+…
+[others]
+...
+----------------------------------------------------------------------------------------------------------------
+</pre> 
+
+</body>
+
+</html>

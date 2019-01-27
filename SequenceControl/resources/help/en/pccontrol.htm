@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html">
+<title>PC-Based Sequential Control</title>
+</head>
+<BODY BGCOLOR=#ffffff>
+
+<h3>PC-Based Sequential Control</h3>
+
+<p>
+The control part of the sequential control software is integrated into WebLadderCAD in the "control" menu. 
+The control part of the software is designed to satisfy following requirement:<br>
+<ol><li>User can perform local-side sequential control.
+        <li>User can perform remote-side sequential control.
+        <li>Control results can be monitored locally or remotely.
+        <li>Local-side and remote-side use the same program.
+</ol>
+
+Due to noisy industry enviroment, industry personal computer is used as controller for its reliability. 
+The Web-based sequential controller uses central control design. Only remote data acquisition modules are exposed to the noisy 
+enviroment. The controller could be made of regular personal computer.
+
+<p>The "control" menu of Web-LadderCAD is shown here:<br>
+
+<table border=0 cellspacing=5 cellpadding=0>
+ <tr>
+  <td width=106 valign=top>
+  Server
+  </td>
+  <td width=438 valign=top>
+  Enter server mode.
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top>
+  Client
+  </td>
+  <td width=438 valign=top>
+  Enter client mode.
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top>
+  Hardware
+  </td>
+  <td width=438 valign=top>
+  Scan/Get  for hardware information.
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top>
+  Grab Control
+  </td>
+  <td width=438 valign=top>
+  Grab the right to control.
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top>
+  Release Control
+  </td>
+  <td width=438 valign=top>
+  Release control right.
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top>
+  Upload
+  </td>
+  <td width=438 valign=top>
+  Upload circuit design to server program.
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top>
+  Download
+  </td>
+  <td width=438 valign=top>
+  Download circuit design from the server program.
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top>
+  Assign
+  </td>
+  <td width=438 valign=top>
+  Assign input/output connections.
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top>
+  Start Control
+  </td>
+  <td width=438 valign=top>
+  Start the control action.
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top>
+ Stop Control
+  </td>
+  <td width=438 valign=top >
+  Stop the control action.
+  </td>
+ </tr>
+</table>
+
+<p> When user wants to perform PC-based sequential control, he clicks on the "Control/Server" function in the pull-down menu
+to enter server mode. Then, he clicks on "Control/Hardware" function to scan through RS232 port to 
+get the information of <a href="nap7000.htm">NAP7000 remote data acquisition modules</a> which are online.
+He then executes "Control/Grab Control" to get control right. 
+
+<p> Then, he has to <a href="assign.htm">assign</a> input/output connections. If the input/output mapping is correct,
+he finally can click on "Control/Start" menu to start control action.</p>
+<p> During the control action, he can click on "Control/Stop" menu to stop the control action anytime.</p>
+
+<p >Web-based Sequential Controller can be used in remote sequential control and monitoring. 
+The server program could be accessed by many client programs at the same time. Whoever wants to perform control action must get
+control right first. The client program which does not have the control right can only monitor the control result.
+
+</BODY>
+
+</html>

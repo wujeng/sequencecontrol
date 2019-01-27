@@ -1,0 +1,15 @@
+0 0 5 5 
+
+3 EDevice PushButton PB PB1 0 3 null 0 null
+
+5 0 0 1 0 null null
+5 0 1 2 9 PB1 null
+5 0 2 2 9 LS2 null
+5 0 3 3 13 null V1
+5 0 4 1 8 null null
+5 1 0 1 0 null null
+5 1 1 2 9 LS1 null
+5 1 2 3 14 null V1
+5 1 3 1 1 null null
+5 1 4 1 8 null null
+

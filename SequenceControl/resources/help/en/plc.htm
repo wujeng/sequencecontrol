@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<title>PLC Codes</title>
+</head>
+<BODY BGCOLOR=FFFFFF>
+
+<h3>PLC Codes</h3>
+<p>To translate the electrical circuit into PLC codes, user clicks on the "PLC\Codes" function in the pull-down menu.
+A PLC code windows will open.
+
+</P>
+<img src="..\images\plc.gif">
+
+<p>In this software, the electrical circuits designed can be translated into PLC codes of all kinds of PLC. 
+There are many kinds of PLC in the world. 
+Every PLC model has its own hardware structure and software format. 
+It is difficulty to define a universal PLC class. 
+However, in this research when we translate the electric circuits into PLC codes, 
+we only use basic instructions (input/output instructions, logic instructions, and timer/counter instructions), 
+which are basic commands of all PLC except that the instruction format might different and memory addresses are different. 
+Based on this understanding, a simple PLC class is defined (see Table 1). 
+With proper information, users can add PLC model into this software. 
+And the software will be able to translate the electrical circuits into the PLC codes of that model.
+</P>
+<p>
+Table 1. part of the configuration file. (see <a href="udefine.htm">User Defined Devices</a>)
+<pre>
+-------------------------------------------------------------------------------------------                                                           
+…
+[PLC]
+% modelName  tooltip        icon_image  
+OMRON_C20 OMRON_C20  OMRONIcon.GIF
+%               command symbols                                                    command lines limit
+LD LD_NOT LD LD_NOT AND AND_NOT OR OR_NOT OR_LD AND_LD OUT TIM CNT RST END 10000
+% input points
+%prefix  base    range
+NULL    10     0-15 100-115 200-215 300-315 400-415
+% output points
+%prefix  base    range
+NULL    10     500-515 600-615 700-715 800-815 900-915
+% relay points
+%prefix  base    range
+NULL    10     1000-1015 1100-1115 1200-1215 1300-1315 1400-1415 1500-1515 1600-1615 1700-1715
+% timer points
+%prefix  format    base    range
+TIM      #xxxx       10      0-47
+% counter points
+%prefix  format   base    range
+CNT      #xxxx                    10      0-47
+%
+MITSUBISHI_FX2 MITSUBISHI_FX2 MITSUBISHIIcon.GIF
+LD LDI LD LDI AND ANI OR ORI ORB ANB OUT OUT OUT RST END 10000
+X   8      0-7 10-17 20-27 30-37 40-47
+Y   8      0-7 10-17 20-27 30-37
+M   10      0-499
+T   #xxxx     10      0-199
+C   #xxxx     10      0-99
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+</pre>
+
+</body>
+
+</html>

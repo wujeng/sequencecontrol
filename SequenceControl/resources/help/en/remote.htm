@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Big5">
+<title>Web-based Sequential Controller</title>
+</head>
+<BODY BGCOLOR=FFFFFF>
+
+<h3>Web-based Sequential Controller</h3>
+
+<p> Since we have a CAD software with simulation function, 
+if we add a simple digital input and digit output card in the computer, 
+then we can perform PC-based sequential control.
+But, with simple I/O card the controller can only be used as a local controller. 
+In that case it will not be able to compete with PLC regarding cost and it will be a waste of computing power of PC. 
+Therefore, in this sequential controller, the WebLadderCAD software is integrated with
+ a remote data acquisition system (NAP7000) to form a central controller.
+<p>
+Currently in factory automation, mostly people use distributed control. 
+Local machines are controlled by PLC or dedicated controller. 
+Local controllers send local data to a central computer by network. 
+The central computer can monitor and send command to local controller if necessary. 
+All control jobs are done in local side. 
+The central computer is only responsible for data display and transmission. 
+But in this research the sequential controller is designed as a central controller. 
+Local data is picked up and transmitted to the controller by data acquisition modules. 
+All control algorisms are computed in the central controller. 
+Then, control commands (control signals) are sent to local output modules to drive local machines. 
+The computation burden of central controller is much heavier than that of distributed control. 
+But many local modules are much cheaper that local controllers. 
+The total cost will be much cheaper for central control. 
+Since in our sequential controller there is no computation intensive job, like servo motor control, 
+a personal computer will be enough.
+
+<p>Web-based Sequential Controller consists of a <a href="ladder.htm">computer-aided sequential control design software</a> 
+and <a href="nap7000.htm">remote data acquisition modules</a>.
+It helps user design electrical circuits for sequential control, 
+simulate the motion of the controlled system according to the circuit design, 
+perform PC-based control and monitor the control results remotely. 
+The controller can be used in any place where sequential control is needed, like factory automation, home security system, ... 
+
+The controller software is a Java application and Java applet. 
+It can be used in any computer with Java virtual machine. 
+Therefore, the controller can be implemented in Windows or Linux system.
+
+<p ><img src="../images/remote.jpg" border=0 width=539 height=394></p>
+
+<p>The Web-based Sequential Controller is used with client/server structure (see figure above).
+Server-side program is running in a server controller. 
+A client-side program which is connected to the server-side program can perform remote sequential control and monitoring.
+The server-side program and client-side program are the same program. 
+When a program is running in server mode, it is a server-side program.
+When a server program first enters server mode, it will scan for NAP7000 remote data acquisition modules to find out 
+what modules are online and builds mirrors of them in the program. Then, a thread is created to keep update date between modules
+and their mirrors.
+When a program is running in client mode, it is a client-side program.
+When a client program enters client mode, it will connect to the server program, read modules information in the server program, 
+and build modules mirror in the client program. Then, socket connection keeps update modules information between server program
+and client program.</p>
+
+<p>The general processes of using this controller are stated in the following:
+<ol><li><a href="setup.htm">Define controlled system in the software</a>.<br>
+Pick up different controlled devices (software components) to form the controlled system. The controlled system will be shown in a window.
+       <li><a href="ecad.htm">Design electrical circuit</a>.<br>
+Use electrical devices (software components) to design electrical circuit or input required motion sequence and ask the program to design electrical circuit automatically.
+       <li><a href="simulation.htm">Simulate motions</a>.<br>
+Let the program simulate the motions of the controlled system according to the circuit design and make correction if necessary.
+      <li><a href="pcControl.htm">Perform PC-based sequential control</a>.<br>
+Set the software in server-side control mode and detect the remote data acquisition system to get all modules. The program will create and show module mirrors. Setup connections between electrical devices and modules input/output points. Perform hardware wiring. Then, get the privilege to control and start the control action.
+      <li><a href="pcControl.htm">Perform remote control or remote monitoring</a>.<br>
+After server-side controller is set up, User can use a remote computer to run the same sequential control software, put it in client-side control mode to get the information of the data acquisition system on server-side through a socket connection. Then, if he can get the control privilege, he can upload/download circuit design and start control action. Otherwise, at least he can monitor the situation of the real controlled system on server-side.
+
+
+</ol>
+
+</body>
+
+</html>

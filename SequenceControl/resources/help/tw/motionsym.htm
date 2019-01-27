@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<TITLE>Expression of motion sequence</TITLE>
+</HEAD>
+<BODY BGCOLOR=FFFFFF>
+<H1>Expression of motion sequence</H1>
+
+<p>There are many ways to express motion sequence.
+In this software symbolic expression with a little extension is used;
+limit switch is listed in the symbol so that the symbolic expression can be used in multiple limit switches cases.
+<p>
+Symbolic expressions are explained in the following:<br>
+<IMG border=1 src="../images/A+.jpg">: Piston A advances to the position of limit switch LS1.<br>
+ <IMG border=1 src="../images/A-.jpg">: Piston A retreats to the position of limit switch LS0.<br>
+ <IMG border=1 src="../images/m1.jpg">: The conveyer driven by motor M1 rolls forward to limit switch LS2.<br>
+ <IMG border=1 src="../images/t.jpg">: Delay T0 seconds.<br>
+
+<p>Generally speaking, the motion pattern can be classified as:<br>
+<ol><li>Simple motion: <br>
+Ex:<IMG border=1 src="../images/simple.jpg">:Piston A advances to LS1, then piston B advances to LS3. Rest for T0 seconds, then B retreats back to LS2, and finally Piston A retreats back to LS0.
+       <li>Simultaneously motion:<br>
+Ex:<IMG border=1 src="../images/sametime.jpg">:Piston A advances to LS1, then piston B advances and piston A retreats at the same time. After A goes to LS0 and B goes to LS3, B retreats to LS2.
+       <li>Multi-branch motion:<br>
+In multi-branch motion the motion sequence is not one way but has multi-way at some point. They can be classified as following four forms:
+    <ol><li>Parallel motion: Parallel motion can have more than two branches.<br>
+Ex:<IMG border=1 src="../images/and.jpg">:Piston A advances to LS1,  then
+two branches,<IMG src="../images/branch1.jpg">and <IMG src="../images/branch2.jpg">, are started at the same time. After two branches are finished, A retreats back to LS0.
+           <li>Choice motion: Choice motion is controlled by a choice switch, hence it has only two branches.<br>
+Ex:<IMG border=1 src="../images/or.jpg">:Piston A advances to LS1,
+then only one branch, <IMG src="../images/branch1.jpg">or<IMG src="../images/branch2.jpg">, is executed according to choice switch. When the branch is finished, A retreats back to LS0
+           <li>Jump motion:<br>
+ Ex:<IMG border=1 src="../images/jump.jpg">:Piston A advances to LS1,
+then skipping the execution of the branch<IMG src="../images/branch3.jpg"> or not depends on a choice switch. Then, A retreats to LS0.
+           <li>Circular motion:<br>
+ There are two kinds of circular motion; one is controlled by a choice switch, and the other is controlled by a counter.
+Ex:<IMG border=1 src="../images/circular.jpg">:Piston A advances to LS1,
+then the branch <IMG src="../images/branch3.jpg">is executed repeatedly until the state of a choice switch is changed or until a counter counts down to zero. Then, A retreats back to LS0.
+         </ol>
+</ol>
+
+<p>
+More complex motion sequence can be expressed with the combination of the above basic patterns, like the following one:
+ <IMG border=1 src="../images/complex.jpg">
+
+
+</BODY>
+</HTML>
